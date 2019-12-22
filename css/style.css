@@ -63,3 +63,42 @@ li a{
 
     background-color: #d7da24;
 }
+
+#map{
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.informacion{
+    background-color: #3d2925;
+    margin: 10px;
+}
+
+.informacion p{
+    font-size: 0.8em;
+    color: white;
+}
+
+.informacion .col-6 div{
+    font-size: 0.8em;
+    color: white;
+}
+
+
+.redes{
+    margin: 2% 0 2% 0;
+}
+
+.redes .col-6:nth-child(2){
+    text-align: right;
+}
+
+.socialLogos{
+    width: 3%;
+    height: auto;
+}
+
+.socialLogos:nth-child(-n+3){
+    margin-right: 10px;
+}
