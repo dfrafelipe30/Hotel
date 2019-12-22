@@ -1,0 +1,65 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+  
+li {
+    display: inline;
+}
+
+li a{
+    font-size: 0.8em;
+    margin: 10px;
+}
+
+.contacto{
+    background-color: #d7da24;
+}
+
+.contacto .col:nth-child(1){
+    margin: 70px 150px 70px 150px;
+}
+
+.contactoInfo div{
+    padding: 0;
+    font-size: 0.8em;
+    border-bottom: solid;
+    border-width: 0.1em;
+}
+
+#whatsappLogo{
+    max-width: 20%;
+    height: auto;
+}
+
+.formulario .col-4 input{
+
+    border: solid;
+    border-width: 0.1px;
+
+    width: 100%;
+    height: 40px;
+}
+
+.formulario .col-4 input:nth-child(-n+2){
+    margin-bottom: 30px;
+}
+
+.formulario .col-8 textarea{
+
+    border: solid;
+    border-width: 0.1px;
+
+    width: 100%;
+    height: 100%;
+}
+
+#sendForm{
+    margin-top: 20px;
+    border: solid;
+    border-width: 1px;
+
+    width: 100px;
+
+    background-color: #d7da24;
+}
