@@ -47,7 +47,7 @@
                 <div class="col-8">
 
                     <!-- Formulario contacto (nombre,correo,telefono,mensaje) -->
-                    <form action="" class="formulario">
+                    <form method="post" action="../javascript/sendEmail.php" class="formulario" name="emailForm">
                         <div class="row">
                             <div class="col-4">
                                 <input type="text" id="nombre" placeholder="Nombre">
@@ -143,5 +143,7 @@
             </div>
         </div>
     </div>
+
+    <script src="../javascript/emailValidator.js"></script>
 </body>
 </html>
