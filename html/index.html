@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Inicio</title>
+
 </head>
 <body>
     <div class="row">
@@ -82,7 +83,56 @@
     </div>
     <!-- TERMALES -->
     <div class="row">
-        
+        <div class="col-4">
+            <!-- Boton de historia -->
+            <div claa="row">
+                <div class="col">
+                    <button class="historia boton" onclick="myFunction(1)">Historia</button> 
+                </div>
+            </div>
+            <!-- Boton de ubicación y clima-->
+            <div class="row">
+                <div class="col">
+                    <button  class="ubicacion boton" onclick="myFunction(2)">Ubicación y clima</button> 
+                </div>
+            </div>
+            <!-- Aves y especies -->
+            <div class="row">
+                <div class="col">
+                    <button class="aves boton" onclick="myFunction(3)">Aves y especies</button>
+                </div>
+            </div>
+            <!-- Recomendaciones -->
+            <div class="row">
+                <div class="col">
+                    <button class="Recomendaciones boton" onclick="myFunction(4)">Recomendaciones</button>
+                </div>
+            </div>
+            <!-- Beneficios del agua -->
+            <div class="row">
+                <div class="col">
+                    <button class="Beneficios boton" onclick="myFunction(5)">Beneficios del agua</button>
+                </div>
+            </div>
+            <!-- Plan romance -->
+            <div class="row">
+                <div class="col">
+                    <button class="romance boton" onclick="myFunction(6)">Plan romance</button>
+                </div>
+            </div>
+            <!-- Plan pasadia -->
+            <div class="row">
+                <div class="col">
+                    <button class="pasadia boton" onclick="myFunction(7)">Plan pasadia</button>
+                </div>
+            </div>
+        </div>
+        <!-- Informacion -->
+        <div class="col-4">
+            <div id="ocultar" class="row">
+                <p>Fue construido en 1937.<br>En las décadas de 1950 a 1970 tuvo auge, cuando en el Nevado del Ruiz existió una pista de esquí, que fue inaugurada, al igual que la carretera que da acceso al Nevado del Ruíz y el Refugio, durante la I Feria de Manizales en 1955. El esquí o sistema de telesillas fue también utilizado por numerosos deportistas nacionales y extranjeros por varios años, en este tiempo en Enero de 1956 se realizó el primer campeonato suramericano Esquí, en el que se destacaron las delegaciones de Argentina, Chile, Bolivia, Bélgica, Suiza, y Colombia.<br>Un lugar que ha atraído desde un principio a numerosos lugareños por las bondades terapéuticas y lo relajante de sus baños, ésta zona hoy en día es considerada “área amortiguadora del Parque Nacional Natural Los Nevados”  y en la que según inventarios de distintas entidades, existen catorce fuentes termales, las cuales varían en su temperatura entre los 28 y 91 grados centígrados, con aguas de muy diferente condición química.<br>Hoy  con más de 80 años atrayendo a lugareños y turistas, es operado por el Hotel Carretero desde el año 2014, el Hotel Termales del Ruiz te invita a vivir una experiencia única en su especie, la cual llamamos Naturaleza Con Estilo, un lugar dónde se vive realmente y donde la magia se encuentra en cada rincón de este hermoso lugar, las estrellas se ven en todo su esplendor, y donde la calidez y confort hacen sentir a sus huéspedes tranquilos.<br>Llevando su magia y diversidad, a la intimidad que se esconde en sus increíbles espacios para el descanso y que no deja atrás vivir la experiencia tú mismo cerca al increíble Nevado del Ruiz en la ciudad de Manizales, con amplios espacios para el descanso y la relajación,la meditación y la lectura.</p>
+            </div>
+        </div>
     </div>
 
     <!-- CONTACTENOS -->
@@ -191,10 +241,11 @@
     </div>
 
     <script src="../javascript/emailValidator.js"></script>
+    <script src="../javascript/visializacion.js"></script>
     <script>
         $(document).ready(function(){
           $('[data-toggle="popover"]').popover();   
         });
-        </script>
+    </script>
 </body>
 </html>
