@@ -8,7 +8,9 @@
     <!-- Estilo -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <title>Inicio</title>
 </head>
 <body>
@@ -34,10 +36,54 @@
     <div class="row"></div>
 
     <!-- SERVICIOS -->
-    <div class="row"></div>
+    <div class="row">
+        <div class = "col">
+            <div class = "row servicios">
 
+                <div class = "col-3">
+                    <div id= uno class = circulo>
+                        <a href="#" data-toggle = "popover" title="Alojamiento" data-content="Sueña a 3500 metros sobre el nivel del mar. 
+                        Contamos con 22 habitaciones donde la exclusividad y la comodidad se 
+                        conectan con sensaciones únicas y noches diferentes,
+                        abrir tus ojos y toparte con la naturaleza es lo que te hará sentir
+                        y disfrutar a tu manera de este lugar único en su especie.">ALOJAMIENTO</a>
+                    </div>
+                </div>
+                <div class = "col-3">
+                    <div class = circulo>
+                        <a href="#" data-toggle = "popover" title="Piscina termal" data-content="Disfruta de las bondades de esta agua minerales 
+                        al aire libre, con baños relajantes de valor medicinal por sus componentes
+                        curativos en una piscina eco termal azufrada en toda su pureza cuyos yacimientos 
+                        se localizan en las entrañas del Volcán Nevado del Ruíz.">Piscina termal</a>
+                    </div>
+                </div>
+                <div class = "col-3">
+                    <div class = circulo>
+                        <a href="#" data-toggle="popover" title="Avistamiento de aves" data-content="Por nuestra ubicación contamos con el privilegio
+                        de contar una variedad de especies de aves entre ellas endémicas y casi endémicas.
+                        No tienes excusas… Sientelas, Oyelas y vívelas, a veces solo necesitas dejar todo
+                        a un lado y disfrutar de ellas que nunca pasarán desapercibidas.">Avistamiento de aves</a>
+                    </div>
+                </div>
+                <div class = "col-3">
+                    <div class = circulo>
+                        <a href="#" data-toggle="popover" title="Senderismo" data-contente="Existe un lugar dónde la naturaleza vive y se encuentra en
+                        cada rincón de este mágico espacio. ¡La vida se mide por los lugares que nos quitan
+                        la respiración! Desconéctate del mundo, Conéctate con la naturaleza. Disfruta de lo
+                        maravilloso que es encontrarse con tus raíces. Senderos ecológicos debidamente reforestados 
+                        con vegetación nativa de la zona, luchamos por la conservación y protección de la fauna y flora
+                        de la regió">Senderismo</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
     <!-- TERMALES -->
-    <div class="row"></div>
+    <div class="row">
+        
+    </div>
 
     <!-- CONTACTENOS -->
     <div class="row contacto">
@@ -145,5 +191,10 @@
     </div>
 
     <script src="../javascript/emailValidator.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+        });
+        </script>
 </body>
 </html>

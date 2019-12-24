@@ -101,3 +101,21 @@ li a{
 .socialLogos:nth-child(-n+3){
     margin-right: 10px;
 }
+.circulo {
+	width: 120px;
+    height: 110px;
+	border-radius: 50%;
+	background: #d7da24;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin:0px auto;
+    padding:3%
+}
+.circulo a{
+    color: black;
+}
+.servicios{
+    background-color: rgb(46, 35, 207);
+}
