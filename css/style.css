@@ -102,22 +102,24 @@ li a{
     margin-right: 10px;
 }
 .circulo {
-	width: 120px;
-    height: 110px;
+	width: 200px;
+    height: 190px;
 	border-radius: 50%;
 	background: #d7da24;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-    margin:0px auto;
+    margin-top: 100px;
     padding:3%
 }
 .circulo a{
     color: black;
 }
 .servicios{
-    background-color: rgb(46, 35, 207);
+    width: 1280px;
+    height: 450px;
+    background-image: url(../img/fondo-Servicios.png)
 }
 .boton{
     text-decoration: none;
@@ -135,4 +137,21 @@ li a{
 .boton:hover{
     color: black;
     background-color: #d7da24;
+}
+.info {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    margin-right: 10px;
+}
+.imagenes img{
+    width:400px;
+    height:150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Termales{
+    background-color: rgb(61, 41, 37);
+}
+.Termales p{
+    color: white;
 }
