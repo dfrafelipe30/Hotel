@@ -83,6 +83,5 @@ function myFunction(n) {
     }
 }
 $(document).ready(function(){
-    
     $('[data-toggle="popover"]').popover();   
 });
