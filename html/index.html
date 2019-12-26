@@ -149,18 +149,18 @@
                     <form method="post" action="../javascript/sendEmail.php" class="formulario" name="emailForm">
                         <div class="row">
                             <div class="col-4">
-                                <input type="text" id="nombre" placeholder="Nombre">
-                                <input type="email" id="email" placeholder="Correo">
-                                <input type="text" id="celular" placeholder="Teléfono">
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+                                <input type="email" id="email" name="email" placeholder="Correo">
+                                <input type="text" id="celular" name="celular" placeholder="Teléfono">
                             </div>
     
                             <div class="col-8">
-                                <textarea id="mesnaje" placeholder="Mensaje"></textarea>
+                                <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
                             </div>
                         </div>
 
                         <div>
-                            <input type="submit" value="Enviar" id="sendForm">
+                            <input type="submit" name='submit' value="Enviar">
                         </div>
                     </form>
 
@@ -243,6 +243,7 @@
         </div>
     </div>
 
+    <script src="../javascript/gen_validatorv31.js"></script>
     <script src="../javascript/emailValidator.js"></script>
     <script src="../javascript/visualizacion.js"></script>
 </body>
