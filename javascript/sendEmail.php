@@ -1,33 +1,43 @@
 <?php
-$errors = '';
-$myemail = 'yourname@website.com';//<-----Put Your email address here.
-if(empty($_POST['name'])  ||
-   empty($_POST['email']) ||
-   empty($_POST['message']))
-{
-    $errors .= "\n Error: all fields are required";
-}
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$message = $_POST['message'];
-if (!preg_match(
-"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-$email_address))
-{
-    $errors .= "\n Error: Invalid email address";
+if(isset($_POST['submit'])){
+$name=$_POST['nombre'];
+$email=$_POST['email'];
+$phone=$_POST['celular'];
+$message=$_POST['mensaje'];
+
+//send mail 
+$to='guzman2000f@gmail.com';
+$subject='Correo de hotel termales del ruiz: Prueba equipo fiverr';
+$body=' <html>
+        <body>
+            <h3>Feedback</h3>
+            <hr>
+
+            <p> Name : '.$name.'</p>
+            <br>
+
+            <p> Email : '.$email.'</p>
+
+            <p>'.$message.'</p>
+
+        </body>
+        </html>';
+
+$headers  ="From:".$name."<".$email.">\r\n";
+$headers .="reply-To:".$email."\r\n";
+$headers .="NINE-Version: 1.0\r\n";
+$headers .="Content-type: text/html; charset=utf-8";
+
+//sending process
+$send=mail($to, $subject, $body, $headers);
+
+if($send){
+echo "success";
 }
 
-if( empty($errors))
-{
-$to = $myemail;
-$email_subject = "Contact form submission: $name";
-$email_body = "You have received a new message. ".
-" Here are the details:\n Name: $name \n ".
-"Email: $email_address\n Message \n $message";
-$headers = "From: $myemail\n";
-$headers .= "Reply-To: $email_address";
-mail($to,$email_subject,$email_body,$headers);
-//redirect to the 'thank you' page
-header('Location: contact-form-thank-you.html');
+else{
+echo "Failed";
+}
+
 }
 ?>
