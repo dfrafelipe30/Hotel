@@ -110,15 +110,15 @@ li a{
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
     padding:3%
 }
 .circulo a{
     color: black;
 }
 .servicios{
-    width: 1280px;
-    height: 450px;
     background-image: url(../img/fondo-Servicios.png)
 }
 .boton{
