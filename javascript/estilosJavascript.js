@@ -23,21 +23,11 @@ $('.menu a').on('click', function(e) {
 	var offset;
   
 	if (elHeight < windowHeight) {
-	  offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
+	  	offset = elOffset - ((windowHeight / 2) - (elHeight / 2));
 	}
 	else {
-	  offset = elOffset;
+	  	offset = elOffset - ((windowHeight / 2) - (elHeight / 5));;
 	}
 	var speed = 700;
 	$('html, body').animate({scrollTop:offset}, speed);
   });
-
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-
-//         document.querySelector(this.getAttribute('href')).scrollIntoView({
-// 			behavior: 'smooth'
-//         });
-//     });
-// });
